@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="TestFrameWork" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yfb1AO60ztcV40S3y54fwegf9j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for src.test_cases.UI.DemoTest">
+    <configuration name="DemoTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for src.test_cases.UI.DemoTest" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="TestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.test_cases.UI.DemoTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.DemoTest" />
+      <item itemvalue="Python tests.pytest for src.test_cases.UI.DemoTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.DemoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="" />
+      <created>1583336377155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583336377155</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="484" y="0" key="#DemoTest" timestamp="1583428907821">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="484" y="0" key="#DemoTest/0.0.1600.860@0.0.1600.860" timestamp="1583428907821" />
+    <state x="254" y="3" width="1092" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583657967044">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="3" width="1092" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1583657967044" />
+    <state x="544" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583661626611">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="544" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1583661626611" />
+    <state x="467" y="172" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583657953536">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="467" y="172" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1583657953536" />
+    <state x="484" y="0" key="#pytest_for_DemoTest.test_run_test" timestamp="1583658037069">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="484" y="0" key="#pytest_for_DemoTest.test_run_test/0.0.1600.860@0.0.1600.860" timestamp="1583658037069" />
+    <state x="674" y="127" width="713" height="733" key="#xdebugger.evaluate" timestamp="1583665277175">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="674" y="127" width="713" height="733" key="#xdebugger.evaluate/0.0.1600.860@0.0.1600.860" timestamp="1583665277175" />
+    <state width="905" height="574" key="DebuggerActiveHint" timestamp="1583680055848">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="905" height="574" key="DebuggerActiveHint/0.0.1600.860@0.0.1600.860" timestamp="1583680055848" />
+    <state x="763" y="210" key="FileChooserDialogImpl" timestamp="1583429057684">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="763" y="210" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1583429057684" />
+    <state width="1573" height="249" key="GridCell.Tab.0.bottom" timestamp="1583773702113">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="249" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1583773702113" />
+    <state width="1573" height="249" key="GridCell.Tab.0.center" timestamp="1583773702113">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="249" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1583773702113" />
+    <state width="1573" height="249" key="GridCell.Tab.0.left" timestamp="1583773702113">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="249" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1583773702113" />
+    <state width="1573" height="249" key="GridCell.Tab.0.right" timestamp="1583773702113">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="249" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1583773702113" />
+    <state width="1573" height="242" key="GridCell.Tab.1.bottom" timestamp="1583683348859">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="242" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1583683348859" />
+    <state width="1573" height="242" key="GridCell.Tab.1.center" timestamp="1583683348858">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="242" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1583683348858" />
+    <state width="1573" height="242" key="GridCell.Tab.1.left" timestamp="1583683348858">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="242" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1583683348858" />
+    <state width="1573" height="242" key="GridCell.Tab.1.right" timestamp="1583683348859">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1573" height="242" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1583683348859" />
+    <state x="243" y="0" key="SettingsEditor" timestamp="1583657325276">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="243" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1583657325276" />
+    <state width="808" height="438" key="XDebugger.FullValuePopup" timestamp="1583660673643">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="808" height="438" key="XDebugger.FullValuePopup/0.0.1600.860@0.0.1600.860" timestamp="1583660673643" />
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1583763416204">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1583763416204" />
+    <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1583338927803">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1583338927803" />
+  </component>
+</project>
