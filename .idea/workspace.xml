@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="" />
+    <list default="true" id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/setup/BaseConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/setup/BaseConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_cases/TestBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/TestBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/BrowserWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/BrowserWrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/ElementWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/ElementWrapper.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +23,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yfb1AO60ztcV40S3y54fwegf9j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -161,10 +171,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="808" height="438" key="XDebugger.FullValuePopup/0.0.1600.860@0.0.1600.860" timestamp="1583660673643" />
-    <state x="431" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1583763416204">
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1583855161154">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1583763416204" />
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1583855161154" />
+    <state x="0" y="0" width="731" height="860" key="find.popup" timestamp="1583857461739">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="0" y="0" width="731" height="860" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1583857461739" />
     <state x="379" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1583338927803">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

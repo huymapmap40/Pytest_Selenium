@@ -14,53 +14,53 @@ class BaseConfig:
     __remoteAddress = None
 
     @staticmethod
-    def SetWait(wait):
+    def set_wait(wait):
         BaseConfig.__wait = wait
 
     @staticmethod
-    def GetWait():
+    def get_wait():
         return BaseConfig.__wait
 
     @staticmethod
-    def SetDriver(driver):
+    def set_driver(driver):
         BaseConfig.__driver = driver
 
     @staticmethod
-    def GetDriver():
+    def get_driver():
         return BaseConfig.__driver
 
     @property
-    def BrowserName(self):
+    def browser_name(self):
         return self.__browserName
 
-    @BrowserName.setter
-    def BrowserName(self, value):
+    @browser_name.setter
+    def browser_name(self, value):
         self.__browserName = value
 
     @property
-    def RemoteAddress(self):
+    def remote_address(self):
         return self.__remoteAddress
 
-    @RemoteAddress.setter
-    def RemoteAddress(self, value):
+    @remote_address.setter
+    def remote_address(self, value):
         self.__remoteAddress = value
 
     @staticmethod
-    def GetInstance():
+    def get_instance():
         if BaseConfig.__instance == None:
             BaseConfig.__instance = BaseConfig()
         return BaseConfig.__instance
 
-    def ShutDown(self):
+    def shut_down(self):
         BaseConfig.__driver.quit()
 
-    def SetUp(self):
+    def set_up(self):
         config_dir = path.dirname(path.dirname(__file__))
         with open(path.join(config_dir, 'config_env_test')) as f:
             data_setup = json.load(f)
-            self.RemoteAddress = data_setup['remoteAddress']
-            self.BrowserName = data_setup['browserName']
-            driver = webdriver.Remote(command_executor=self.RemoteAddress, desired_capabilities={'browserName': self.BrowserName})
+            self.remote_address = data_setup['remoteAddress']
+            self.browser_name = data_setup['browserName']
+            driver = webdriver.Remote(command_executor=self.remote_address, desired_capabilities={'browserName': self.browser_name})
             wait = WebDriverWait(driver, Constant.DRIVER_TIMEOUT)
-            BaseConfig.SetDriver(driver)
-            BaseConfig.SetWait(wait)
+            BaseConfig.set_driver(driver)
+            BaseConfig.set_wait(wait)
