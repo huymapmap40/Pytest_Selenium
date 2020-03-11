@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/deposit_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/fill_email_guru_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/manager_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/new_account_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/new_customer_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/z_demo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test_data/bug_data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test_data/general/page_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wrappers/error_wrapper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wrappers/select_element_wrapper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/setup/BaseConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/setup/BaseConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/setup/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test_cases/TestBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/TestBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wrappers/BrowserWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/BrowserWrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wrappers/ElementWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/ElementWrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/Constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/BrowserWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/browser_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/ElementWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/element_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/ErrorWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_account_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/SelectElementWrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_customer_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +43,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yfb1AO60ztcV40S3y54fwegf9j" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -171,10 +188,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="808" height="438" key="XDebugger.FullValuePopup/0.0.1600.860@0.0.1600.860" timestamp="1583660673643" />
-    <state x="431" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1583855161154">
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1583934639899">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1583855161154" />
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1583934639899" />
     <state x="0" y="0" width="731" height="860" key="find.popup" timestamp="1583857461739">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

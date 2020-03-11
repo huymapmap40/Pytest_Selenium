@@ -1,4 +1,4 @@
-from src.wrappers.BrowserWrapper import BrowserWrapper
+from src.wrappers.browser_wrapper import BrowserWrapper
 
 class TestBase:
 

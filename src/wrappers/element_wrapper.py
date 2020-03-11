@@ -3,8 +3,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import *
 from selenium.webdriver.support import expected_conditions as EC
-from src.utilities.Constant import Constant
-from src.wrappers.BrowserWrapper import BrowserWrapper
+from src.utilities.constant import Constant
+from src.wrappers.browser_wrapper import BrowserWrapper
 from selenium import webdriver
 
 
