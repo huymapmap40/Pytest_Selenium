@@ -5,13 +5,14 @@ from selenium.common.exceptions import *
 from selenium.webdriver.support import expected_conditions as EC
 from src.utilities.constant import Constant
 from src.wrappers.browser_wrapper import BrowserWrapper
+from typing import Tuple
 from selenium import webdriver
 
 
 class ElementWrapper:
 
     # locator argument input is equivalent with tuple (By.xx , value_of_by)
-    def __init__(self, locator):
+    def __init__(self, locator: Tuple[By, str]):
         self.__locator = locator
         self.__wait = WebDriverWait(BrowserWrapper.driver_instance(), Constant.ELEMENT_TIMEOUT)
 
