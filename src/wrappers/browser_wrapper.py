@@ -8,7 +8,7 @@ from selenium import webdriver
 
 
 class BrowserWrapper:
-    webdriver.Firefox().switch_to.alert.accept()
+    # webdriver.Firefox().switch_to.alert.accept()
     __currentBrowserDriver = None
 
     def __init__(self):

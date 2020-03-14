@@ -1,5 +1,6 @@
 from src.wrappers.browser_wrapper import BrowserWrapper
 
+
 class TestBase:
 
     @staticmethod

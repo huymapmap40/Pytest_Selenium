@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
-from src.data_objects.page_constants.deposit_page_constants import DepositPageConstants
 
 
 class DepositPage:

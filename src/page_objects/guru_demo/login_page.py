@@ -1,3 +1,4 @@
+from __future__ import annotations
 from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 from .manager_page import ManagerPage
@@ -18,7 +19,7 @@ class LoginPage:
             LoginPage.__instance = LoginPage()
         return LoginPage.__instance
 
-    def login_to_manager_page(self, user_name, pwd):
+    def login_to_manager_page(self, user_name, pwd) -> ManagerPage:
         self._input_user_id.type(user_name)
         self._input_pwd.type(pwd)
         self._btn_login.click()

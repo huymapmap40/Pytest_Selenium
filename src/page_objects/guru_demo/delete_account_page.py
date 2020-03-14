@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import  By
-from src.wrappers.element_wrapper import ElementWrapper, BrowserWrapper
+from src.wrappers.element_wrapper import ElementWrapper
+from src.wrappers.browser_wrapper import BrowserWrapper
 
 
 class DeleteAccountPage:
@@ -18,4 +19,6 @@ class DeleteAccountPage:
         self._txt_account_id.type(account_id)
         self._btn_submit.click()
         if BrowserWrapper.is_alert_displayed():
+            # Handle to accept two alert
+            BrowserWrapper.accept_alert()
             BrowserWrapper.accept_alert()

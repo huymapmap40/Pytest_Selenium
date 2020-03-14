@@ -3,8 +3,8 @@ from os import path
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from src.utilities.constant import Constant
+
 
 class BaseConfig:
     __instance = None
@@ -47,7 +47,7 @@ class BaseConfig:
 
     @staticmethod
     def get_instance():
-        if BaseConfig.__instance == None:
+        if BaseConfig.__instance is None:
             BaseConfig.__instance = BaseConfig()
         return BaseConfig.__instance
 
@@ -60,7 +60,8 @@ class BaseConfig:
             data_setup = json.load(f)
             self.remote_address = data_setup['remoteAddress']
             self.browser_name = data_setup['browserName']
-            driver = webdriver.Remote(command_executor=self.remote_address, desired_capabilities={'browserName': self.browser_name})
+            driver = webdriver.Remote(command_executor=self.remote_address,
+                                      desired_capabilities={'browserName': self.browser_name})
             wait = WebDriverWait(driver, Constant.DRIVER_TIMEOUT)
             BaseConfig.set_driver(driver)
             BaseConfig.set_wait(wait)
