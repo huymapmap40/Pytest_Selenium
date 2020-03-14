@@ -8,7 +8,7 @@ from selenium import webdriver
 
 
 class BrowserWrapper:
-    # webdriver.Firefox().find_element(By.XPATH,...)
+    webdriver.Firefox().switch_to.alert.accept()
     __currentBrowserDriver = None
 
     def __init__(self):
@@ -42,6 +42,19 @@ class BrowserWrapper:
             lambda x: x.execute_script("return document.readyState") == "complete")
         self.set_page_load_timeout(Constant.PAGE_LOAD_TIMEOUT)
         self.set_element_timeout(Constant.ELEMENT_TIMEOUT)
+
+    @staticmethod
+    def is_alert_displayed():
+        wait = WebDriverWait(BrowserWrapper.driver_instance(), Constant.MIDDLE_TIMEOUT)
+        return False if wait.until(EC.alert_is_present()) is None else True
+
+    @staticmethod
+    def accept_alert():
+        BrowserWrapper.driver_instance().switch_to.alert.accept()
+
+    @staticmethod
+    def cancel_alert():
+        BrowserWrapper.driver_instance().switch_to.alert.dismiss()
 
     @staticmethod
     def execute_javascript(script_string, *args):

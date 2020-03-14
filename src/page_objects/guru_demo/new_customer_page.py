@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 from src.data_objects.customer import Customer
 
+
 class NewCustomerPage:
     __instance = None
 

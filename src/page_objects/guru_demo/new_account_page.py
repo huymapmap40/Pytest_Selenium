@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 from typing import TypeVar
 
+
 class NewAccountPage:
     __instance = None
 

@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 from .manager_page import ManagerPage
 
+
 class LoginPage:
     __instance = None
 

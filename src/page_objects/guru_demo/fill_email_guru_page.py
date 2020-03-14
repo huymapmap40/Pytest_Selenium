@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 
+
 class FillEmailGuruPage:
     __instance = None
 

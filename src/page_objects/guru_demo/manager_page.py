@@ -7,6 +7,7 @@ from .deposit_page import DepositPage
 from .delete_account_page import DeleteAccountPage
 from .delete_customer_page import DeleteCustomerPage
 
+
 class ManagerPage:
 
     __instance = None
