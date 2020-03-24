@@ -2,11 +2,11 @@ import time
 import pytest
 from hamcrest import assert_that
 from src.test_cases.TestBase import TestBase
-from src.utilities.Constant import Constant
+from src.utilities.constant import Constant
 
 
 def test_run_test():
-    TestBase.SetupTest(Constant.URL_PAGE)
+    TestBase.setup_test(Constant.URL_PAGE)
     time.sleep(5)
-    TestBase.CleanupTest()
+    TestBase.cleanup_test()
     assert_that(True, True)

@@ -1,16 +1,17 @@
-from src.wrappers.BrowserWrapper import BrowserWrapper
+from src.wrappers.browser_wrapper import BrowserWrapper
+
 
 class TestBase:
 
     @staticmethod
-    def SetupTest(url):
+    def setup_test(url):
         print("Setup the test")
         global browserObj
         browserObj = BrowserWrapper()
-        browserObj.MaximizeWindow()
-        browserObj.GoToUrl(url)
+        browserObj.maximize_window_browser()
+        browserObj.go_to_url(url)
 
     @staticmethod
-    def CleanupTest():
+    def cleanup_test():
         print("Setup the test")
-        browserObj.Quit()
+        browserObj.quit()
