@@ -8,13 +8,13 @@ from selenium import webdriver
 
 
 class BrowserWrapper:
-    # webdriver.Firefox().switch_to.alert.accept()
+    # webdriver.Firefox().get_screenshot_as_png()
     __currentBrowserDriver = None
 
     def __init__(self):
         BrowserWrapper.driver_instance()
 
-    # Get webdriver instance
+    # Get web driver instance
     @staticmethod
     def driver_instance():
         try:
@@ -23,7 +23,7 @@ class BrowserWrapper:
                 base_config_object.set_up()
                 BrowserWrapper.__currentBrowserDriver = base_config_object.get_driver()
         except:
-            raise WebDriverException("Could not setup webdriver")
+            raise WebDriverException("Could not setup web driver")
         return BrowserWrapper.__currentBrowserDriver
 
     def set_page_load_timeout(self, timeout_in_second):
@@ -42,6 +42,9 @@ class BrowserWrapper:
             lambda x: x.execute_script("return document.readyState") == "complete")
         self.set_page_load_timeout(Constant.PAGE_LOAD_TIMEOUT)
         self.set_element_timeout(Constant.ELEMENT_TIMEOUT)
+
+    def get_screenshot_png(self):
+        return BrowserWrapper.driver_instance().get_screenshot_as_png()
 
     @staticmethod
     def is_alert_displayed():

@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test_cases/UI/guru_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_telecom/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_telecom/home_page_telecom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test_cases/UI/guru_telecom_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/setup/BaseConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/setup/BaseConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_account_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_customer_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/deposit_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/deposit_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_demo/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_cases/TestBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/TestBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/delete_account_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/delete_customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/deposit_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/deposit_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/fill_email_guru_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/fill_email_guru_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/manager_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/new_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/new_account_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/new_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/new_customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_cases/TestBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/test_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_cases/UI/guru_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/UI/guru_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_data/general/page_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_data/general/page_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/constant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wrappers/browser_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/browser_wrapper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +54,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test_cases/UI/guru_test.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_cases.UI.guru_test.TestGuru.test_guru_functional">
-    <configuration name="DemoTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for guru_telecom_test.test_run_test">
+    <configuration name="guru_telecom_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TestFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,7 +69,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" />
+      <option name="SCRIPT_NAME" value="D:\PythonProjects\TestFrameWork\src\test_cases\UI\guru_telecom_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -68,7 +78,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for src.test_cases.UI.DemoTest.test_run_test" type="tests" factoryName="py.test" nameIsGenerated="true">
+    <configuration name="pytest for guru_telecom_test.test_run_test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;--alluredir\u003d\&quot;D:\\PythonProjects\\TestFrameWork\\src\\reports\&quot;&quot;" />
+      <option name="_new_target" value="&quot;guru_telecom_test.test_run_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for src.test_cases.UI.demo_test.test_run_test" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="TestFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +104,37 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;src.test_cases.UI.DemoTest.test_run_test&quot;" />
+      <option name="_new_target" value="&quot;src.test_cases.UI.demo_test.test_run_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for src.test_cases.UI.guru_telecom_test.test_run_test" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="TestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.test_cases.UI.guru_telecom_test.test_run_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for src.test_cases.UI.guru_telecom_test.test_run_test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="TestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test_cases/UI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src.test_cases.UI.guru_telecom_test.test_run_test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -114,16 +169,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.DemoTest" />
-      <item itemvalue="Python tests.pytest for src.test_cases.UI.DemoTest.test_run_test" />
+      <item itemvalue="Python.guru_telecom_test" />
       <item itemvalue="Python tests.pytest for test_cases.UI.guru_test" />
       <item itemvalue="Python tests.pytest for test_cases.UI.guru_test.TestGuru.test_guru_functional" />
+      <item itemvalue="Python tests.pytest for src.test_cases.UI.guru_telecom_test.test_run_test" />
+      <item itemvalue="Python tests.pytest for guru_telecom_test.test_run_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for guru_telecom_test.test_run_test" />
+        <item itemvalue="Python tests.pytest for src.test_cases.UI.guru_telecom_test.test_run_test" />
         <item itemvalue="Python tests.pytest for test_cases.UI.guru_test.TestGuru.test_guru_functional" />
         <item itemvalue="Python tests.pytest for test_cases.UI.guru_test" />
-        <item itemvalue="Python.DemoTest" />
+        <item itemvalue="Python.guru_telecom_test" />
       </list>
     </recent_temporary>
   </component>
@@ -149,9 +207,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="292" y="5" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1584025305665" />
-    <state x="277" y="3" width="1092" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584203407545">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="1924" y="3" width="1092" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586277308577">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
+    <state x="1924" y="3" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586277308577" />
     <state x="277" y="3" width="1092" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1584203407545" />
     <state x="544" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583661626611">
       <screen x="0" y="0" width="1600" height="860" />
@@ -169,6 +228,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="484" y="0" key="#pytest_for_DemoTest.test_run_test/0.0.1600.860@0.0.1600.860" timestamp="1583658037069" />
+    <state x="2244" y="78" key="#pytest_for_guru_telecom_test.test_run_test" timestamp="1586278046735">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2244" y="78" key="#pytest_for_guru_telecom_test.test_run_test/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586278046735" />
     <state x="674" y="127" width="713" height="733" key="#xdebugger.evaluate" timestamp="1583665277175">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -185,41 +248,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="763" y="210" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1584200003210" />
-    <state width="1573" height="249" key="GridCell.Tab.0.bottom" timestamp="1584205010027">
+    <state width="1893" height="318" key="GridCell.Tab.0.bottom" timestamp="1586280562234">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="318" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586280562234" />
+    <state width="1573" height="242" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584207062243" />
+    <state width="1893" height="318" key="GridCell.Tab.0.center" timestamp="1586280562224">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="318" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586280562224" />
+    <state width="1573" height="242" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584207062243" />
+    <state width="1893" height="318" key="GridCell.Tab.0.left" timestamp="1586280562224">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="318" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586280562224" />
+    <state width="1573" height="242" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584207062242" />
+    <state width="1893" height="318" key="GridCell.Tab.0.right" timestamp="1586280562234">
+      <screen x="1600" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1893" height="318" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586280562234" />
+    <state width="1573" height="242" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584207062243" />
+    <state width="1573" height="242" key="GridCell.Tab.1.bottom" timestamp="1584207062244">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1573" height="249" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584205010027" />
-    <state width="1573" height="249" key="GridCell.Tab.0.center" timestamp="1584205010027">
+    <state width="1573" height="242" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584207062244" />
+    <state width="1573" height="242" key="GridCell.Tab.1.center" timestamp="1584207062243">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1573" height="249" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584205010027" />
-    <state width="1573" height="249" key="GridCell.Tab.0.left" timestamp="1584205010026">
+    <state width="1573" height="242" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1584207062243" />
+    <state width="1573" height="242" key="GridCell.Tab.1.left" timestamp="1584207062243">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1573" height="249" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584205010026" />
-    <state width="1573" height="249" key="GridCell.Tab.0.right" timestamp="1584205010027">
+    <state width="1573" height="242" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1584207062243" />
+    <state width="1573" height="242" key="GridCell.Tab.1.right" timestamp="1584207062243">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1573" height="249" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584205010027" />
-    <state width="1573" height="242" key="GridCell.Tab.1.bottom" timestamp="1584204307885">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1573" height="242" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1584207062243" />
+    <state x="2018" y="61" key="SettingsEditor" timestamp="1586270913470">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state width="1573" height="242" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584204307885" />
-    <state width="1573" height="242" key="GridCell.Tab.1.center" timestamp="1584204307885">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1573" height="242" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1584204307885" />
-    <state width="1573" height="242" key="GridCell.Tab.1.left" timestamp="1584204307885">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1573" height="242" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1584204307885" />
-    <state width="1573" height="242" key="GridCell.Tab.1.right" timestamp="1584204307885">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state width="1573" height="242" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1584204307885" />
-    <state x="243" y="0" key="SettingsEditor" timestamp="1583657325276">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
+    <state x="2018" y="61" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586270913470" />
     <state x="243" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1583657325276" />
     <state x="641" y="329" key="VCS.ChangelistChooser" timestamp="1584162788178">
       <screen x="0" y="0" width="1600" height="860" />
@@ -229,10 +297,12 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="808" height="438" key="XDebugger.FullValuePopup/0.0.1600.860@0.0.1600.860" timestamp="1583660673643" />
-    <state x="431" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1584159023142">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="2117" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586270044253">
+      <screen x="1600" y="0" width="1920" height="1040" />
     </state>
-    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584159023142" />
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1585305860411" />
+    <state x="2117" y="256" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586270044253" />
+    <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585149430210" />
     <state x="0" y="0" width="731" height="860" key="find.popup" timestamp="1583857461739">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

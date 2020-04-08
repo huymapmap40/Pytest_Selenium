@@ -1,10 +1,10 @@
 from hamcrest import assert_that, equal_to
-from src.page_objects.guru_demo import *
+from src.page_objects.guru_bank import *
 from src.test_data.general.page_urls import PageUrls
 from src.data_objects.customer import Customer
 from src.wrappers.browser_wrapper import BrowserWrapper
 from src.data_objects.page_constants.deposit_page_constants import DepositPageConstants
-from ..TestBase import TestBase
+from ..test_base import TestBase
 
 
 class TestGuru(TestBase):
