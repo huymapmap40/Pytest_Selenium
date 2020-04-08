@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f21ad93-227f-4f02-acaa-d982174d2259" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_telecom/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page_objects/guru_telecom/home_page_telecom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test_cases/UI/guru_telecom_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/delete_account_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/delete_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/delete_customer_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/deposit_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/deposit_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/fill_email_guru_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/fill_email_guru_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/manager_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/new_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/new_account_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_objects/guru_demo/new_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_objects/guru_bank/new_customer_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_cases/TestBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/test_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_cases/UI/DemoTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_cases/UI/guru_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_cases/UI/guru_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_data/general/page_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_data/general/page_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wrappers/browser_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wrappers/browser_wrapper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,10 +152,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.guru_telecom_test" />
+      <item itemvalue="Python tests.pytest for guru_telecom_test.test_run_test" />
+      <item itemvalue="Python tests.pytest for src.test_cases.UI.demo_test.test_run_test" />
+      <item itemvalue="Python tests.pytest for src.test_cases.UI.guru_telecom_test.test_run_test" />
       <item itemvalue="Python tests.pytest for test_cases.UI.guru_test" />
       <item itemvalue="Python tests.pytest for test_cases.UI.guru_test.TestGuru.test_guru_functional" />
-      <item itemvalue="Python tests.pytest for src.test_cases.UI.guru_telecom_test.test_run_test" />
-      <item itemvalue="Python tests.pytest for guru_telecom_test.test_run_test" />
     </list>
     <recent_temporary>
       <list>
@@ -297,11 +280,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="808" height="438" key="XDebugger.FullValuePopup/0.0.1600.860@0.0.1600.860" timestamp="1583660673643" />
-    <state x="2117" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586270044253">
+    <state x="2117" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1586354002641">
       <screen x="1600" y="0" width="1920" height="1040" />
     </state>
     <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1585305860411" />
-    <state x="2117" y="256" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586270044253" />
+    <state x="2117" y="256" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1586354002641" />
     <state x="431" y="212" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585149430210" />
     <state x="0" y="0" width="731" height="860" key="find.popup" timestamp="1583857461739">
       <screen x="0" y="0" width="1600" height="860" />
