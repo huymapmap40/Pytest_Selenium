@@ -1,0 +1,25 @@
+{
+  "configInfo": {
+    "enableRemoteWebDriver": false,
+    "testTimeOut": 400000
+  },
+  "localWebDriver": {
+    "browserName": "chrome",
+    "platform": "ANY"
+  },
+  "remoteWebDriver": {
+    "remoteAddress": "http://54.254.108.141:4444/wd/hub",
+    "desiredCapabilities": [
+      {
+        "browserName": "firefox",
+        "platform": "WINDOWS",
+        "version": ""
+      },
+      {
+        "browserName": "chrome",
+        "platform": "WINDOWS",
+        "version": ""
+      }
+    ]
+  }
+}

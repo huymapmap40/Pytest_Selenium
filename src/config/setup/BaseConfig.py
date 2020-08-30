@@ -9,9 +9,7 @@ from src.utilities.constant import Constant
 class BaseConfig:
     __instance = None
     __driver = None
-    __browserName = None
     __wait = None
-    __remoteAddress = None
 
     @staticmethod
     def set_wait(wait):
@@ -29,22 +27,6 @@ class BaseConfig:
     def get_driver():
         return BaseConfig.__driver
 
-    @property
-    def browser_name(self):
-        return self.__browserName
-
-    @browser_name.setter
-    def browser_name(self, value):
-        self.__browserName = value
-
-    @property
-    def remote_address(self):
-        return self.__remoteAddress
-
-    @remote_address.setter
-    def remote_address(self, value):
-        self.__remoteAddress = value
-
     @staticmethod
     def get_instance():
         if BaseConfig.__instance is None:
@@ -56,12 +38,23 @@ class BaseConfig:
 
     def set_up(self):
         config_dir = path.dirname(path.dirname(__file__))
-        with open(path.join(config_dir, 'config_env_test')) as f:
+        with open(path.join(config_dir, 'config_env_test.json')) as f:
             data_setup = json.load(f)
-            self.remote_address = data_setup['remoteAddress']
-            self.browser_name = data_setup['browserName']
-            driver = webdriver.Remote(command_executor=self.remote_address,
-                                      desired_capabilities={'browserName': self.browser_name})
-            wait = WebDriverWait(driver, Constant.DRIVER_TIMEOUT)
-            BaseConfig.set_driver(driver)
-            BaseConfig.set_wait(wait)
+            initial_driver = None
+            if data_setup['configInfo']['enableRemoteWebDriver']:
+                remote_address = data_setup['remoteWebDriver']['remoteAddress']
+                desired_capabilities = data_setup['remoteWebDriver']['desiredCapabilities'][1] # Chrome
+                initial_driver = webdriver.Remote(command_executor=remote_address,
+                                        desired_capabilities=desired_capabilities)
+            else:
+                browser_name = data_setup['localWebDriver']['browserName']
+                if browser_name == Constant.CHROME_BROWSER:
+                    initial_driver = webdriver.Chrome(executable_path=path.abspath("drivers/chromedriver.exe"))
+                elif browser_name == Constant.FIREFOX_BROWSER:
+                    initial_driver = webdriver.Firefox(executable_path=path.abspath("drivers/geckodriver.exe"))
+                else:
+                    raise KeyError("Browser name not found!")
+            initial_wait = WebDriverWait(initial_driver, Constant.DRIVER_TIMEOUT)
+            BaseConfig.set_driver(initial_driver)
+            BaseConfig.set_wait(initial_wait)
+                    
