@@ -8,17 +8,15 @@
     "platform": "ANY"
   },
   "remoteWebDriver": {
-    "remoteAddress": "http://54.254.108.141:4444/wd/hub",
+    "remoteAddress": "http://localhost:4444/wd/hub",
     "desiredCapabilities": [
       {
         "browserName": "firefox",
-        "platform": "WINDOWS",
-        "version": ""
+        "platform": "ANY"
       },
       {
         "browserName": "chrome",
-        "platform": "WINDOWS",
-        "version": ""
+        "platform": "ANY"
       }
     ]
   }
