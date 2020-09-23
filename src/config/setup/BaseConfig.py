@@ -36,14 +36,15 @@ class BaseConfig:
     def shut_down(self):
         BaseConfig.__driver.quit()
 
-    def set_up(self):
+    def set_up(self, **kwargs):
         config_dir = path.dirname(path.dirname(__file__))
         with open(path.join(config_dir, 'config_env_test.json')) as f:
             data_setup = json.load(f)
             initial_driver = None
             if data_setup['configInfo']['enableRemoteWebDriver']:
                 remote_address = data_setup['remoteWebDriver']['remoteAddress']
-                desired_capabilities = data_setup['remoteWebDriver']['desiredCapabilities'][1] # Chrome
+                # desired_capabilities = data_setup['remoteWebDriver']['desiredCapabilities'][1] # Chrome
+                desired_capabilities = {"browserName": kwargs["browser_name"], "platform": "ANY"}
                 initial_driver = webdriver.Remote(command_executor=remote_address,
                                         desired_capabilities=desired_capabilities)
             else:

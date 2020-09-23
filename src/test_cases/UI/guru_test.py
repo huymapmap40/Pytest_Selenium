@@ -32,16 +32,16 @@ class TestGuru(TestBase):
 
     def test_guru_functional(self):
         print("==== Start test guru99 functional ====")
-        TestGuru.setup_test(PageUrls.GURU_99_PAGE)
+        TestGuru().setup_test(PageUrls.GURU_99_PAGE)
         fill_email_obj = FillEmailGuruPage.get_instance()
 
         # Fill an email and get username/passwd
-        fill_email_obj.fill_email_and_submit(self.access_email)
+        fill_email_obj.fill_email_and_submit(TestGuru.access_email)
         user_id = fill_email_obj.get_user_name()
         user_passwd = fill_email_obj.get_password()
 
         # Login to manager page with valid authentication
-        browser_obj = BrowserWrapper()
+        browser_obj = BrowserWrapper.instance()
         browser_obj.go_to_url(PageUrls.LOGIN_GURU_99_PAGE)
         login_page_obj = LoginPage.get_instance()
         manager_page_obj = login_page_obj.login_to_manager_page(user_id, user_passwd)
@@ -102,4 +102,4 @@ class TestGuru(TestBase):
         delete_account_page_obj.delete_account(account_id)
         delete_customer_page_obj = manager_page_obj.go_to_delete_customer_page()
         delete_customer_page_obj.delete_customer(customer_id)
-        TestGuru.cleanup_test()
+        TestGuru().cleanup_test()

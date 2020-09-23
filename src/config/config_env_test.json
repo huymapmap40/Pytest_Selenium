@@ -1,6 +1,6 @@
 {
   "configInfo": {
-    "enableRemoteWebDriver": false,
+    "enableRemoteWebDriver": true,
     "testTimeOut": 400000
   },
   "localWebDriver": {
