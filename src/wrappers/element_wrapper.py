@@ -18,14 +18,14 @@ class ElementWrapper:
     # Method to get element by locator and it's value
     def __map(self):
         try:
-            return BrowserWrapper.instance().find_element(self.__locator[0], self.__locator[1])
+            return BrowserWrapper.instance_driver().find_element(self.__locator[0], self.__locator[1])
         except NoSuchElementException as E:
             print(E)
             print("Not found element by {} with value '{}'".format(self.__locator[0], self.__locator[1]))
 
     # Method return webdriver wait object
     def __wait(self):
-        return WebDriverWait(BrowserWrapper.instance(), Constant.ELEMENT_TIMEOUT)
+        return WebDriverWait(BrowserWrapper.instance_driver(), Constant.ELEMENT_TIMEOUT)
 
     def wait_clickable(self):
         self.__wait().until(EC.element_to_be_clickable(self.__locator))
@@ -65,7 +65,7 @@ class ElementWrapper:
             print(E)
 
     def move_mouse_and_click(self):
-        action = ActionChains(BrowserWrapper.instance())
+        action = ActionChains(BrowserWrapper.instance_driver())
         try:
             action.move_to_element(self.__map()).click().perform()
         except MoveTargetOutOfBoundsException as E:

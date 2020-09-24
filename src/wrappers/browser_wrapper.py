@@ -11,38 +11,30 @@ class BrowserWrapper:
     # webdriver.Firefox().get_screenshot_as_png()
     __currentBrowserDriver = None
 
-    def __init__(self, driver):
-        self.driver = driver
-        BrowserWrapper.__currentBrowserDriver = self.driver
-
     @staticmethod
-    def instance():
+    def instance_driver():
         return BrowserWrapper.__currentBrowserDriver
 
-    # Get web driver instance
+    # Set web driver instance
     @staticmethod
-    def driver_instance():
+    def inject_driver(driver):
         try:
             if BrowserWrapper.__currentBrowserDriver is None:
-                # base_config_object = BaseConfig()
-                # base_config_object.set_up()
-                # BrowserWrapper.__currentBrowserDriver = base_config_object.get_driver()
-                BrowserWrapper.__currentBrowserDriver = BrowserWrapper()
+                BrowserWrapper.__currentBrowserDriver = driver
         except:
-            raise WebDriverException("Could not setup web driver")
-        return BrowserWrapper.__currentBrowserDriver
+            raise WebDriverException("Web driver has not been init")
 
     def set_page_load_timeout(self, timeout_in_second):
-        BrowserWrapper.instance().set_page_load_timeout(timeout_in_second)
+        BrowserWrapper.instance_driver().set_page_load_timeout(timeout_in_second)
 
     def set_element_timeout(self, timeout_in_second):
-        BrowserWrapper.instance().implicitly_wait(timeout_in_second)
+        BrowserWrapper.instance_driver().implicitly_wait(timeout_in_second)
 
     def maximize_window_browser(self):
-        BrowserWrapper.instance().maximize_window()
+        BrowserWrapper.instance_driver().maximize_window()
 
     def go_to_url(self, url):
-        current_driver = BrowserWrapper.instance()
+        current_driver = BrowserWrapper.instance_driver()
         current_driver.get(url)
         WebDriverWait(current_driver, Constant.DRIVER_TIMEOUT).until(
             lambda x: x.execute_script("return document.readyState") == "complete")
@@ -50,31 +42,31 @@ class BrowserWrapper:
         self.set_element_timeout(Constant.ELEMENT_TIMEOUT)
 
     def get_screenshot_png(self):
-        return BrowserWrapper.instance().get_screenshot_as_png()
+        return BrowserWrapper.instance_driver().get_screenshot_as_png()
 
     @staticmethod
     def is_alert_displayed():
-        wait = WebDriverWait(BrowserWrapper.instance(), Constant.MIDDLE_TIMEOUT)
+        wait = WebDriverWait(BrowserWrapper.instance_driver(), Constant.MIDDLE_TIMEOUT)
         return False if wait.until(EC.alert_is_present()) is None else True
 
     @staticmethod
     def accept_alert():
-        BrowserWrapper.instance().switch_to.alert.accept()
+        BrowserWrapper.instance_driver().switch_to.alert.accept()
 
     @staticmethod
     def cancel_alert():
-        BrowserWrapper.instance().switch_to.alert.dismiss()
+        BrowserWrapper.instance_driver().switch_to.alert.dismiss()
 
     @staticmethod
     def execute_javascript(script_string, *args):
         try:
-            return BrowserWrapper.instance().execute_script(script_string, args)
+            return BrowserWrapper.instance_driver().execute_script(script_string, args)
         except:
             raise JavascriptException("Could not execute the script '{}'".format(script_string))
 
     @staticmethod
     def refresh_page():
-        BrowserWrapper.instance().refresh()
+        BrowserWrapper.instance_driver().refresh()
 
     def quit(self):
-        BrowserWrapper.instance().quit()
+        BrowserWrapper.instance_driver().quit()

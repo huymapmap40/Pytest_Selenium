@@ -3,19 +3,20 @@ import warnings
 import urllib3
 from selenium import webdriver
 from src.config.setup.BaseConfig import BaseConfig
+from src.wrappers.browser_wrapper import BrowserWrapper
 
-driver = None
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default=None, help="Define browser to run")
 
 @pytest.fixture(scope="class")
 def setup_driver(request):
-    global driver
     browserName = request.config.getoption("--browser")
     if browserName is not None:
-        BaseConfig.get_instance().set_up(browser_name=browserName)
-        driver = BaseConfig.get_driver()
-    request.cls.driver = driver
+        config = BaseConfig.get_instance().__init_driver(browser_name=browserName)
+    else:
+        config = BaseConfig.get_instance().__init_driver()
+    BrowserWrapper.inject_driver(config.Driver)
+    request.cls.driver = config.Driver
     yield
-    driver.quit()
+    config.Driver.quit()

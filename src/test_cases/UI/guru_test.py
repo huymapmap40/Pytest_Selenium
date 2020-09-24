@@ -41,7 +41,7 @@ class TestGuru(TestBase):
         user_passwd = fill_email_obj.get_password()
 
         # Login to manager page with valid authentication
-        browser_obj = BrowserWrapper.instance()
+        browser_obj = BrowserWrapper.instance_driver()
         browser_obj.go_to_url(PageUrls.LOGIN_GURU_99_PAGE)
         login_page_obj = LoginPage.get_instance()
         manager_page_obj = login_page_obj.login_to_manager_page(user_id, user_passwd)

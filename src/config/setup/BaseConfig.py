@@ -1,4 +1,5 @@
 import json
+import collections
 from os import path
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -7,25 +8,8 @@ from src.utilities.constant import Constant
 
 
 class BaseConfig:
+
     __instance = None
-    __driver = None
-    __wait = None
-
-    @staticmethod
-    def set_wait(wait):
-        BaseConfig.__wait = wait
-
-    @staticmethod
-    def get_wait():
-        return BaseConfig.__wait
-
-    @staticmethod
-    def set_driver(driver):
-        BaseConfig.__driver = driver
-
-    @staticmethod
-    def get_driver():
-        return BaseConfig.__driver
 
     @staticmethod
     def get_instance():
@@ -36,7 +20,7 @@ class BaseConfig:
     def shut_down(self):
         BaseConfig.__driver.quit()
 
-    def set_up(self, **kwargs):
+    def __init_driver(self, **kwargs):
         config_dir = path.dirname(path.dirname(__file__))
         with open(path.join(config_dir, 'config_env_test.json')) as f:
             data_setup = json.load(f)
@@ -56,6 +40,6 @@ class BaseConfig:
                 else:
                     raise KeyError("Browser name not found!")
             initial_wait = WebDriverWait(initial_driver, Constant.DRIVER_TIMEOUT)
-            BaseConfig.set_driver(initial_driver)
-            BaseConfig.set_wait(initial_wait)
+            web_init = collections.namedtuple('WebInit', ['Driver', 'Wait'])
+            return web_init(initial_driver, initial_wait)
                     
