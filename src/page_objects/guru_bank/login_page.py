@@ -5,7 +5,7 @@ from .manager_page import ManagerPage
 
 
 class LoginPage:
-    __instance = None
+    __instance: LoginPage = None
 
     # Init login page element
     _input_user_id = ElementWrapper((By.XPATH, "//input[@name='uid']"))

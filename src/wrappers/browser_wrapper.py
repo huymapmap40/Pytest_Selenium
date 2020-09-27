@@ -1,3 +1,4 @@
+from __future__ import annotations
 from src.utilities.constant import Constant
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -5,24 +6,29 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException, JavascriptException
 from src.config.setup.BaseConfig import BaseConfig
 from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
 
 
 class BrowserWrapper:
     # webdriver.Firefox().get_screenshot_as_png()
-    __currentBrowserDriver = None
+    __currentBrowserDriver: WebDriver = None
+    __instance: BrowserWrapper = None
 
     @staticmethod
-    def instance_driver():
+    def instance():
+        if BrowserWrapper.__instance is None:
+            BrowserWrapper.__instance = BrowserWrapper()
+        return BrowserWrapper.__instance
+
+    @staticmethod
+    def instance_driver() -> WebDriver:
         return BrowserWrapper.__currentBrowserDriver
 
     # Set web driver instance
     @staticmethod
-    def inject_driver(driver):
-        try:
-            if BrowserWrapper.__currentBrowserDriver is None:
-                BrowserWrapper.__currentBrowserDriver = driver
-        except:
-            raise WebDriverException("Web driver has not been init")
+    def inject_driver(driver: WebDriver):
+        if BrowserWrapper.__currentBrowserDriver is None:
+            BrowserWrapper.__currentBrowserDriver = driver
 
     def set_page_load_timeout(self, timeout_in_second):
         BrowserWrapper.instance_driver().set_page_load_timeout(timeout_in_second)

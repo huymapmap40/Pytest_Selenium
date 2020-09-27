@@ -1,3 +1,4 @@
+from random import randint
 from hamcrest import assert_that, equal_to
 from src.page_objects.guru_bank import *
 from src.test_data.general.page_urls import PageUrls
@@ -20,7 +21,7 @@ class TestGuru(TestBase):
     customer_state = "StateABCXYZ"
     customer_pin = "123456"
     customer_phone = "654321"
-    customer_email = "huymapmap@gmail.com"
+    customer_email = f"huymapmap{randint(1, 999)}@gmail.com"
     customer_passwd = "123456"
     message_customer_added = "Customer Registered Successfully!!!"
     message_account_created = "Account Generated Successfully!!!"
@@ -41,7 +42,7 @@ class TestGuru(TestBase):
         user_passwd = fill_email_obj.get_password()
 
         # Login to manager page with valid authentication
-        browser_obj = BrowserWrapper.instance_driver()
+        browser_obj = BrowserWrapper.instance()
         browser_obj.go_to_url(PageUrls.LOGIN_GURU_99_PAGE)
         login_page_obj = LoginPage.get_instance()
         manager_page_obj = login_page_obj.login_to_manager_page(user_id, user_passwd)
@@ -102,4 +103,4 @@ class TestGuru(TestBase):
         delete_account_page_obj.delete_account(account_id)
         delete_customer_page_obj = manager_page_obj.go_to_delete_customer_page()
         delete_customer_page_obj.delete_customer(customer_id)
-        TestGuru().cleanup_test()
+        # TestGuru().cleanup_test()

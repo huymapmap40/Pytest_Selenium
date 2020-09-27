@@ -10,7 +10,7 @@ from .delete_customer_page import DeleteCustomerPage
 
 class ManagerPage:
 
-    __instance = None
+    __instance: ManagerPage = None
 
     # Init manager page element
     _mnu_new_customer = ElementWrapper((By.XPATH, "//ul[@class='menusubnav']/li/a[text()='New Customer']"))

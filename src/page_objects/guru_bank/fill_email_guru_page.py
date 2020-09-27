@@ -1,9 +1,10 @@
+from __future__ import annotations
 from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 
 
 class FillEmailGuruPage:
-    __instance = None
+    __instance: FillEmailGuruPage = None
 
     # Locators
     _txt_email_address = ElementWrapper((By.XPATH, "//input[@name='emailid']"))

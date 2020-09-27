@@ -13,9 +13,9 @@ def pytest_addoption(parser):
 def setup_driver(request):
     browserName = request.config.getoption("--browser")
     if browserName is not None:
-        config = BaseConfig.get_instance().__init_driver(browser_name=browserName)
+        config = BaseConfig.get_instance().init_driver(browser_name=browserName)
     else:
-        config = BaseConfig.get_instance().__init_driver()
+        config = BaseConfig.get_instance().init_driver()
     BrowserWrapper.inject_driver(config.Driver)
     request.cls.driver = config.Driver
     yield

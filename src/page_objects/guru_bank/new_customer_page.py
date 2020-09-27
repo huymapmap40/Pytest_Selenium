@@ -1,4 +1,4 @@
-from __future__ import annotations
+from __future__ import annotations # Handle python typing return var type to a specific class
 from selenium.webdriver.common.by import By
 from src.wrappers.element_wrapper import ElementWrapper
 from src.data_objects.customer import Customer

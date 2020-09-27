@@ -20,7 +20,7 @@ class BaseConfig:
     def shut_down(self):
         BaseConfig.__driver.quit()
 
-    def __init_driver(self, **kwargs):
+    def init_driver(self, **kwargs):
         config_dir = path.dirname(path.dirname(__file__))
         with open(path.join(config_dir, 'config_env_test.json')) as f:
             data_setup = json.load(f)

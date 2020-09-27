@@ -1,10 +1,10 @@
 {
   "configInfo": {
-    "enableRemoteWebDriver": true,
+    "enableRemoteWebDriver": false,
     "testTimeOut": 400000
   },
   "localWebDriver": {
-    "browserName": "chrome",
+    "browserName": "firefox",
     "platform": "ANY"
   },
   "remoteWebDriver": {

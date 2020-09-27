@@ -8,12 +8,12 @@ class TestBase:
     # @staticmethod
     def setup_test(self, url):
         print("Setup the test")
-        global browserObj
-        browserObj = BrowserWrapper(self.driver)
-        browserObj.maximize_window_browser()
-        browserObj.go_to_url(url)
+        # global browser_handle
+        browser_handle = BrowserWrapper.instance()
+        browser_handle.maximize_window_browser()
+        browser_handle.go_to_url(url)
 
     # @staticmethod
-    def cleanup_test(self):
-        print("Setup the test")
-        browserObj.quit()
+    # def cleanup_test(self):
+    #     print("Setup the test")
+    #     browser_handle.quit()
